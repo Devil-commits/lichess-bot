@@ -35,11 +35,11 @@ engine:                      # Engine settings.
       enabled: true
       min_time: 20
       move_quality: "best"   # One of "all", "good", "best"
-      min_depth: 50         # Only for move_quality: "best"
+      min_depth: 40         # Only for move_quality: "best"
       contribute: true
     lichess_cloud_analysis:
       enabled: true
-      min_time: 40
+      min_time: 20
       move_quality: "best"   # One of "good", "best"
       max_score_difference: 100 # Only for move_quality: "good". The maximum score difference (in cp) between the best move and the other moves.
       min_depth: 100
@@ -48,7 +48,7 @@ engine:                      # Engine settings.
       enabled: true
       min_time: 20
       max_pieces: 7
-      source: "lichess"      # One of "lichess", "chessdb"
+      source: "chessdb"      # One of "lichess", "chessdb"
       move_quality: "best"   # One of "good", "best"
 # engine_options:            # Any custom command line params to pass to the engine.
 #   cpuct: 3.1
